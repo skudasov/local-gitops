@@ -8,7 +8,6 @@ spec:
         github:
           owner: skudasov
           repo: local-gitops
-          api: https://git.example.com/
           tokenRef:
             secretName: private-repo-creds
             key: token
