@@ -39,8 +39,7 @@ task start
 task stop
 ```
 
-### Creating a PR generator
-Create a new PR generator
-```
-task templates:pr_gen
-```
+## Working on PR Generators and plugins
+Base [PR Generator](apps/argocd/base/pr/pr.yaml) is installed by default.
+
+Create any PR on this repo with a label `review` to trigger it.

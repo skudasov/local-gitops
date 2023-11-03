@@ -40,6 +40,7 @@ tasks:
   hook_git_secret:
     cmds:
       - |
+        kubectl create ns ephemeral
         kubectl create secret generic github-token --from-literal=token=$GH_PASS -o yaml --dry-run=client > github-token-secret.yaml
         kubectl -n argocd apply -f github-token-secret.yaml
 
